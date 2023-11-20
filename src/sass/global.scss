@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Rosario;
+  src: local('Rosario-Bold'), url('../fonts/Rosario-Bold.woff2') format(woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: DMSans;
+  src: local('DMSans-Regular'), url('../fonts/DMSans-Regular.woff2') format(woff2);
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: DMSans;
+  src: local('DMSans-Medium'), url('../fonts/DMSans-Medium.woff2') format(woff2);
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: Rosario;
+  src: local('DMSans-bold'), url('../fonts/DMSans-bold.woff2') format(woff2);
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
