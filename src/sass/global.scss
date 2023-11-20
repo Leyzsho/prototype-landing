@@ -29,3 +29,44 @@
   font-style: normal;
   font-display: fallback;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  min-width: 320px;
+  font-family: DMSans, sans-serif;
+}
