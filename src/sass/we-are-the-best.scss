@@ -1,0 +1,53 @@
+.we-are-the-best {
+  &__container {
+    @include container;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: repeat(3, max-content);
+    column-gap: 80px;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    @include descr;
+    grid-column: 1;
+    margin-bottom: 58px;
+
+    &--item {
+      margin: 0;
+      grid-column: 2;
+    }
+  }
+
+  &__list {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 100px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: repeat(2, max-content);
+    gap: 8px 44px;
+    padding-left: 60px;
+
+    &-svg {
+      grid-row: span 2;
+      align-self: center;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__img {
+    grid-column: 2;
+    grid-row: 3 / 4;
+  }
+}

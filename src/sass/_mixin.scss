@@ -32,3 +32,49 @@
     background-color: $color3;
   }
 }
+
+@mixin title {
+  font-family: Rosario;
+  font-size: 70px;
+  line-height: 100%;
+  color: $color2;
+}
+
+@mixin descr {
+  color: $color3;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@mixin linkToAppContainer {
+  @include descr;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: $color2;
+  font-weight: 500;
+  transition: color .3s ease-in-out;
+  outline: none;
+
+  &:focus-visible {
+    color: $color5;
+  }
+}
+
+@mixin linkToAppCircle {
+  @include descr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: $color5;
+}
+
+@mixin linkToAppArrowRight {
+  width: 32px;
+  height: 15px;
+  transition: transform .3s ease-in-out;
+}

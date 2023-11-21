@@ -1,7 +1,138 @@
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
+  @mixin btn {
+    &:hover {
+      background-color: $color5;
+    }
+  }
+
   .header {
-    &__nav {
+    &__link {
+      @include btn;
+    }
+  }
+
+  .hero {
+    padding-bottom: 100px;
+
+    &__container {
+      grid-template-columns: 70% 1fr;
+    }
+
+    &__link {
+      &:hover {
+        .hero__link-svg {
+          transform: none;
+        }
+      }
+    }
+  }
+
+  .we-are-the-best {
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__descr {
+      text-align: center;
+
+      &--item {
+        text-align: left;
+      }
+    }
+
+    &__list {
+      gap: 50px;
+    }
+
+    &__item {
+      padding-left: 30px;
+    }
+
+    &__img {
       display: none;
     }
   }
 }
+
+@media (max-width: 767px) {
+  @mixin descr {
+    line-height: 26px;
+  }
+
+  @mixin title {
+    font-size: 56px;
+  }
+
+  .header {
+    padding: 20px 0;
+
+    &__nav {
+      display: none;
+    }
+  }
+
+  .hero {
+    padding-bottom: 50px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      @include title;
+    }
+
+    &__descr {
+      @include descr;
+      width: 100%;
+      margin-bottom: 20px;
+
+      &--item {
+        margin: 0;
+      }
+    }
+
+    &__link {
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    &__list {
+      gap: 15px;
+    }
+  }
+
+  .we-are-the-best {
+    &__title {
+      @include title;
+    }
+
+    &__descr {
+      margin-bottom: 30px;
+
+      &--item {
+        margin: 0;
+      }
+    }
+
+    &__list {
+      gap: 40px;
+    }
+
+    &__item {
+      padding: 0;
+      gap: 8px 20px;
+    }
+  }
+}
+
