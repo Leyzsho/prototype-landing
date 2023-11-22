@@ -4,7 +4,8 @@
   &__container {
     @include container;
     display: grid;
-    grid-template-columns: 85% 1fr;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 140px;
   }
 
   &__title {
@@ -34,6 +35,13 @@
     @include linkToAppContainer;
     grid-column: span 2;
     justify-self: center;
+    margin-bottom: 20px;
+
+    &:focus-visible {
+      .hero__link-circle {
+        transform: translateX(20px);
+      }
+    }
 
     &:hover {
       .hero__link-svg {
@@ -51,8 +59,7 @@
   }
 
   &__img {
-    object-fit: contain;
-    height: 300px;
+    align-self: flex-end;
   }
 
   &__list {

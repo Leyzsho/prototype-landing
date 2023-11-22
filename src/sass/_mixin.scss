@@ -56,10 +56,6 @@
   font-weight: 500;
   transition: color .3s ease-in-out;
   outline: none;
-
-  &:focus-visible {
-    color: $color5;
-  }
 }
 
 @mixin linkToAppCircle {
@@ -71,6 +67,7 @@
   height: 64px;
   border-radius: 50%;
   background-color: $color5;
+  transition: transform .3s ease-in-out;
 }
 
 @mixin linkToAppArrowRight {

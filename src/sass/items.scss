@@ -1,0 +1,73 @@
+.items {
+  padding-bottom: 96px;
+
+  &__container {
+    @include container;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, max-content);
+    column-gap: 30px;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    @include descr;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    grid-row: span 3;
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    grid-template-rows: 170px 30px 230px 30px 170px;
+    gap: 15px;
+  }
+
+  &__item {
+    outline: 1px solid red;
+
+    &:nth-child(1) {
+      grid-row: 2 / 4;
+    }
+
+    &:nth-child(2) {
+      grid-row: span 2;
+    }
+
+    &:nth-child(3) {
+      grid-row: span 2;
+    }
+
+    &:nth-child(4) {
+      grid-row: span 2;
+    }
+  }
+
+  &__link {
+    @include linkToAppContainer;
+
+    &:focus-visible {
+      .items__link-circle {
+        transform: translateX(20px);
+      }
+    }
+
+    &:hover {
+      .items__link-svg {
+        transform: rotate(90deg);
+      }
+    }
+
+    &-svg {
+      @include linkToAppArrowRight;
+    }
+
+    &-circle {
+      @include linkToAppCircle;
+    }
+  }
+}
