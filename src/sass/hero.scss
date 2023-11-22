@@ -58,8 +58,16 @@
     }
   }
 
-  &__img {
+  &__picture {
+    height: 100%;
     align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__img {
+    height: 70%;
+    object-fit: contain;
   }
 
   &__list {

@@ -6,12 +6,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, max-content);
-    column-gap: 30px;
+    column-gap: 90px;
   }
 
   &__title {
     @include title;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   &__descr {
@@ -20,15 +20,19 @@
   }
 
   &__list {
+    position: relative;
+    z-index: -1;
     grid-row: span 3;
     display: grid;
     grid-template-columns: 45% 1fr;
     grid-template-rows: 170px 30px 230px 30px 170px;
     gap: 15px;
+    transform: rotate(30deg);
   }
 
   &__item {
-    outline: 1px solid red;
+    padding: 28px;
+    box-shadow: 18px 18px 35px 0px rgba(246, 127, 14, 0.6);
 
     &:nth-child(1) {
       grid-row: 2 / 4;
@@ -47,8 +51,16 @@
     }
   }
 
+  &__img {
+    height: 100%;
+    object-fit: contain;
+  }
+
   &__link {
     @include linkToAppContainer;
+    width: max-content;
+    height: max-content;
+    align-self: center;
 
     &:focus-visible {
       .items__link-circle {

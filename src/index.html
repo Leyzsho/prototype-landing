@@ -32,9 +32,9 @@
             </svg>
           </span>
         </a>
-        <picture class="hero__img">
-          <source src="index.html" type="image/webp">
-          <img class="hero__img" src="./images/hero-pizza.png" alt="пицца">
+        <picture class="hero__picture">
+          <source src="./images/hero-pizza.webp" type="image/webp">
+          <img loading="lazy" class="hero__img" src="./images/hero-pizza.png" alt="пицца">
         </picture>
         <ul class="hero__list">
           <li class="hero__item">
@@ -78,18 +78,37 @@
         </ul>
         <picture class="we-are-the-best__img">
           <source src="./images/we-are-the-best-pizza.webp" type="image/webp">
-          <img class="we-are-the-best__img" src="./images/we-are-the-best-pizza.png" alt="пицца">
+          <img loading="lazy" class="we-are-the-best__img" src="./images/we-are-the-best-pizza.png" alt="пицца">
         </picture>
-
       </div>
     </section>
     <section class="items">
       <div class="items__container">
         <ul class="items__list">
-          <li class="items__item"></li>
-          <li class="items__item"></li>
-          <li class="items__item"></li>
-          <li class="items__item"></li>
+          <li class="items__item">
+            <picture>
+              <source src="./images/items-1.webp" type="image/webp">
+              <img loading="lazy" src="./images/items-1.jpg" alt="пицца" class="items__img">
+            </picture>
+        </li>
+          <li class="items__item">
+            <picture>
+              <source src="./images/items-2.webp" type="image/webp">
+              <img loading="lazy" src="./images/items-2.jpg" alt="пицца" class="items__img">
+            </picture>
+        </li>
+          <li class="items__item">
+            <picture>
+              <source src="./images/items-3.webp" type="image/webp">
+              <img loading="lazy" src="./images/items-3.jpg" alt="пицца" class="items__img">
+            </picture>
+        </li>
+          <li class="items__item">
+            <picture>
+              <source src="./images/items-4.webp" type="image/webp">
+              <img loading="lazy" src="./images/items-4.jpg" alt="пицца" class="items__img">
+            </picture>
+        </li>
         </ul>
         <h2 class="items__title">Ознакомьтесь с нашими товарами</h2>
         <p class="items__descr">В нашем приложении вы найдете широкий выбор пицц, приготовленных из свежих ингредиентов. Мы предлагаем классические пиццы с томатным соусом и моцареллой, а также оригинальные пиццы с необычными начинками. Загрузите приложение сейчас и откройте для себя новые вкусы!</p>
@@ -101,6 +120,136 @@
             </svg>
           </span>
         </a>
+      </div>
+    </section>
+    <section class="client-reviews">
+      <div class="client-reviews__container">
+        <h2 class="client-reviews__title">Что наши клиенты говорят о нас</h2>
+        <div class="swiper client-reviews__swiper">
+          <ul class="swiper-wrapper client-reviews__swiper-wrapper">
+            <li class="swiper-slide client-reviews__swiper-slide">
+              <p class="client-reviews__descr">Обожаю вашу пиццу! Она самая вкусная в городе. Начинка всегда свежая и сочная, а тесто тонкое и хрустящее. Доставка тоже быстрая и вежливая. Спасибо, что делаете такую вкусную пиццу!</p>
+              <span class="client-reviews__client-name" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">Майк</span>
+              <div class="client-reviews__star-container" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-half"></use></svg>
+              </div>
+            </li>
+            <li class="swiper-slide client-reviews__swiper-slide">
+              <p class="client-reviews__descr">Регулярно заказываю пиццу в этой пиццерии. Всегда очень довольна. Пицца вкусная, свежая и ароматная. Доставка всегда вовремя. Персонал приветливый и вежливый. Рекомендую!</p>
+              <span class="client-reviews__client-name" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">Макс</span>
+              <div class="client-reviews__star-container" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-half"></use></svg>
+              </div>
+            </li>
+            <li class="swiper-slide client-reviews__swiper-slide">
+              <p class="client-reviews__descr">Сегодня впервые заказал пиццу в этой пиццерии. Не ожидал, что она будет такой вкусной! Начинка очень щедрая, а тесто тоненькое и хрустящее. Обязательно закажу ещё!</p>
+              <span class="client-reviews__client-name" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">Саша</span>
+              <div class="client-reviews__star-container" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-half"></use></svg>
+              </div>
+            </li>
+            <li class="swiper-slide client-reviews__swiper-slide">
+              <p class="client-reviews__descr">Пицца просто восхитительная! Вкусная, сочная, ароматная. Тесто тонкое и хрустящее. Доставка быстрая и бесплатная. Спасибо за вкусную пиццу!</p>
+              <span class="client-reviews__client-name" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">Андрей</span>
+              <div class="client-reviews__star-container" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+              </div>
+            </li>
+            <li class="swiper-slide client-reviews__swiper-slide">
+              <p class="client-reviews__descr">Очень вкусная пицца! Обязательно рекомендую попробовать. Начинка всегда свежая и сочная, а тесто тонкое и хрустящее. Доставка быстрая и вежливая. Спасибо, что делаете такую вкусную пиццу!</p>
+              <span class="client-reviews__client-name" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">Петя</span>
+              <div class="client-reviews__star-container" data-swiper-parallax-x="200" data-swiper-parallax-opacity="0">
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-full"></use></svg>
+                <svg class="client-reviews__star"><use xlink:href="#star-half"></use></svg>
+              </div>
+            </li>
+          </ul>
+          <div class="client-reviews__swiper-btn-container">
+            <button class="client-reviews__swiper-btn client-reviews__swiper-btn--prev"><svg class="client-reviews__swiper-svg client-reviews__swiper-svg--prev"><use xlink:href="#arrow-swiper"></use></svg></button>
+            <button class="client-reviews__swiper-btn client-reviews__swiper-btn--next"><svg class="client-reviews__swiper-svg client-reviews__swiper-svg--next"><use xlink:href="#arrow-swiper"></use></svg></button>
+          </div>
+        </div>
+        <div class="client-reviews__client-container">
+          <ul class="client-reviews__client-images-list">
+            <li class="client-reviews__client-images-item" data-client-image-index="0">
+              <picture>
+                <source src="./images/client-1.webp" type="image/webp">
+                <img loading="lazy" class="client-reviews__client-img" src="./images/client-1.png" alt="клиент">
+              </picture>
+            </li>
+            <li class="client-reviews__client-images-item" data-client-image-index="1">
+              <picture>
+                <source src="./images/client-2.webp" type="image/webp">
+                <img loading="lazy" class="client-reviews__client-img" src="./images/client-2.png" alt="клиент">
+              </picture>
+            </li>
+            <li class="client-reviews__client-images-item" data-client-image-index="2">
+              <picture>
+                <source src="./images/client-3.webp" type="image/webp">
+                <img loading="lazy" class="client-reviews__client-img" src="./images/client-3.png" alt="клиент">
+              </picture>
+            </li>
+            <li class="client-reviews__client-images-item" data-client-image-index="3">
+              <picture>
+                <source src="./images/client-4.webp" type="image/webp">
+                <img loading="lazy" class="client-reviews__client-img" src="./images/client-4.png" alt="клиент">
+              </picture>
+            </li>
+            <li class="client-reviews__client-images-item" data-client-image-index="4">
+              <picture>
+                <source src="./images/client-5.webp" type="image/webp">
+                <img loading="lazy" class="client-reviews__client-img" src="./images/client-5.png" alt="клиент">
+              </picture>
+            </li>
+          </ul>
+          <div class="client-reviews__client-avatar-container">
+            <ul class="client-reviews__client-avatar-list">
+              <li class="client-reviews__client-avatar-item" data-client-avatar-index="1">
+                <picture>
+                  <source src="./images/client-2.webp" type="image/webp">
+                  <img loading="lazy" class="client-reviews__client-img" src="./images/client-2.png">
+                </picture>
+              </li>
+              <li class="client-reviews__client-avatar-item" data-client-avatar-index="2">
+                <picture>
+                  <source src="./images/client-3.webp" type="image/webp">
+                  <img loading="lazy" class="client-reviews__client-img" src="./images/client-3.png">
+                </picture>
+              </li>
+              <li class="client-reviews__client-avatar-item" data-client-avatar-index="3">
+                <picture>
+                  <source src="./images/client-4.webp" type="image/webp">
+                  <img loading="lazy" class="client-reviews__client-img" src="./images/client-4.png">
+                </picture>
+              </li>
+              <li class="client-reviews__client-avatar-item" data-client-avatar-index="4">
+                <picture>
+                  <source src="./images/client-5.webp" type="image/webp">
+                  <img loading="lazy" class="client-reviews__client-img" src="./images/client-5.png">
+                </picture>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   </main>

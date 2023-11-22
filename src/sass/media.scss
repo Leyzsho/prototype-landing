@@ -24,6 +24,8 @@
   }
 
   .we-are-the-best {
+    padding-bottom: 100px;
+
     &__container {
       display: flex;
       flex-direction: column;
@@ -53,6 +55,92 @@
       display: none;
     }
   }
+
+  .items {
+    padding-bottom: 50px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__descr {
+      text-align: center;
+      margin: 0;
+    }
+
+    &__list {
+      order: 1;
+    }
+
+    &__link {
+      order: 2;
+
+      &:hover {
+        .items__link-svg {
+          transform: none;
+        }
+      }
+    }
+  }
+
+  .client-reviews {
+    padding-bottom: 100px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__descr {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__client {
+      &-name {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+
+      &-images {
+        &-list {
+          width: 350px;
+          height: 350px;
+          margin: 0 auto;
+        }
+      }
+
+      &-avatar-container {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__swiper {
+      margin-bottom: 30px;
+      padding-bottom: 85px;
+
+      &-slide {
+        align-items: center;
+      }
+
+      &-btn-container {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -61,7 +149,7 @@
   }
 
   @mixin title {
-    font-size: 56px;
+    font-size: 50px;
   }
 
   .header {
@@ -105,11 +193,14 @@
   }
 
   .we-are-the-best {
+    padding-bottom: 50px;
+
     &__title {
       @include title;
     }
 
     &__descr {
+      @include descr;
       margin-bottom: 30px;
 
       &--item {
@@ -124,6 +215,47 @@
     &__item {
       padding: 0;
       gap: 8px 20px;
+    }
+  }
+
+  .items {
+    overflow: hidden;
+
+    &__title {
+      @include title;
+    }
+
+    &__descr {
+      @include descr;
+    }
+
+    &__list {
+      grid-template-rows: 95px 15px 125px 15px 95px;
+    }
+
+    &__item {
+      padding: 12px;
+    }
+  }
+
+  .client-reviews {
+    padding-bottom: 50px;
+
+    &__title {
+      @include title;
+    }
+
+    &__descr {
+      @include descr;
+    }
+
+    &__client {
+      &-images {
+        &-list {
+          width: 250px;
+          height: 250px;
+        }
+      }
     }
   }
 }
