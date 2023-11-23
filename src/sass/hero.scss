@@ -22,13 +22,6 @@
     width: 80%;
     justify-self: center;
     margin-bottom: 40px;;
-
-    &--item {
-      width: 100%;
-      grid-column: span 1;
-      margin: 0;
-      color: $color1;
-    }
   }
 
   &__link {
@@ -36,18 +29,6 @@
     grid-column: span 2;
     justify-self: center;
     margin-bottom: 20px;
-
-    &:focus-visible {
-      .hero__link-circle {
-        transform: translateX(20px);
-      }
-    }
-
-    &:hover {
-      .hero__link-svg {
-        transform: rotate(90deg);
-      }
-    }
 
     &-circle {
       @include linkToAppCircle;
@@ -81,6 +62,12 @@
     display: grid;
     grid-template-columns: 32px 1fr;
     grid-template-rows: repeat(2, max-content);
+
+    &-descr {
+      @include descr;
+      justify-self: center;
+      color: $color1;
+    }
 
     &-svg {
       display: block;

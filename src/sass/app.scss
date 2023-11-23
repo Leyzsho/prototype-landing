@@ -1,0 +1,56 @@
+.app {
+  padding-bottom: 146px;
+
+  &__container {
+    @include container;
+    padding: 0 70px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    column-gap: 120px;
+  }
+
+  &__picture {
+    grid-row: span 4;
+  }
+
+  &__title {
+    @include title;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    @include descr;
+    margin-bottom: 50px;
+  }
+
+  &__download-text {
+    @include descr;
+    width: max-content;
+    margin-bottom: 26px;
+    padding: 10px 24px;
+    color: #333;
+    background-color: $color4;
+    border-radius: 50px;
+  }
+
+  &__link-container {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__link {
+    width: 104px;
+    height: 30px;
+    outline: 2px solid $color6;
+    transition: outline-color .3s ease-in-out;
+
+    &:focus-visible {
+      outline-color: $color5;
+    }
+
+    svg {
+      width: inherit;
+      height: inherit;
+    }
+  }
+}

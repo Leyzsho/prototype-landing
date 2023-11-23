@@ -1,4 +1,5 @@
 .items {
+  overflow: hidden;
   padding-bottom: 96px;
 
   &__container {
@@ -61,18 +62,6 @@
     width: max-content;
     height: max-content;
     align-self: center;
-
-    &:focus-visible {
-      .items__link-circle {
-        transform: translateX(20px);
-      }
-    }
-
-    &:hover {
-      .items__link-svg {
-        transform: rotate(90deg);
-      }
-    }
 
     &-svg {
       @include linkToAppArrowRight;

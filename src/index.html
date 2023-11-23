@@ -10,13 +10,13 @@
     <div class="header__container">
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#" class="header__nav-link">О нас</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Пицца</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-link">Отзывы</a></li>
+          <li class="header__nav-item"><a href="#we-are-the-best" class="header__nav-link" data-anchor-link><span>О нас</span></a></li>
+          <li class="header__nav-item"><a href="#items" class="header__nav-link" data-anchor-link><span>Пицца</span></a></li>
+          <li class="header__nav-item"><a href="#client-reviews" class="header__nav-link" data-anchor-link><span>Отзывы</span></a></li>
         </ul>
       </nav>
       <svg class="header__logo"><use xlink:href="#logo"></use></svg>
-      <a class="header__link" href="#">Присоединиться</a>
+      <a class="header__link" href="#app" data-anchor-link><span><span>Присоединиться</span></span></a>
     </div>
   </header>
   <main class="main">
@@ -24,7 +24,7 @@
       <div class="hero__container">
         <h1 class="hero__title">Лучшая пицца</h1>
         <p class="hero__descr">У нас вы найдете пиццу на любой вкус. Мы предлагаем широкий выбор начинок, включая классические варианты, такие как пицца с пепперони или пицца с грибами, а также более экзотические начинки, такие как пицца с морепродуктами или пицца с ананасом.</p>
-        <a class="hero__link" href="#">
+        <a class="hero__link" href="#app" data-anchor-link="">
           Заказать
           <span class="hero__link-circle">
             <svg class="hero__link-svg">
@@ -40,22 +40,22 @@
           <li class="hero__item">
             <svg class="hero__item-svg"><use xlink:href="#icon-user"></use></svg>
             <h3 class="hero__subtitle">30K</h3>
-            <span class="hero__descr hero__descr--item">Заказов</span>
+            <span class="hero__item-descr">Заказов</span>
           </li>
           <li class="hero__item">
             <svg class="hero__item-svg"><use xlink:href="#icon-star"></use></svg>
             <h3 class="hero__subtitle">20K</h3>
-            <span class="hero__descr hero__descr--item">Отзывов(4.8)</span>
+            <span class="hero__item-descr">Отзывов(4.8)</span>
           </li>
           <li class="hero__item">
             <svg class="hero__item-svg"><use xlink:href="#icon-harvest"></use></svg>
             <h3 class="hero__subtitle">300</h3>
-            <span class="hero__descr hero__descr--item">Видов</span>
+            <span class="hero__item-descr">Видов</span>
           </li>
         </ul>
       </div>
     </section>
-    <section class="we-are-the-best">
+    <section class="we-are-the-best" id="we-are-the-best">
       <div class="we-are-the-best__container">
         <h2 class="we-are-the-best__title">Почему мы лучшие?</h2>
         <p class="we-are-the-best__descr">Мы используем только самые свежие и качественные ингредиенты, которые мы тщательно выбираем у проверенных поставщиков. Наша основа для пиццы готовится из натурального теста с добавлением оливкового масла, что придает ей особый вкус и аромат.</p>
@@ -63,17 +63,17 @@
           <li class="we-are-the-best__item">
             <svg class="we-are-the-best__item-svg"><use xlink:href="#icon-delivery-man"></use></svg>
             <h3 class="we-are-the-best__subtitle">Ускоренная доставка</h3>
-            <p class="we-are-the-best__descr we-are-the-best__descr--item">Мы доставляем пиццу за 30 минут с момента заказа. Это значит, что вы сможете насладиться свежей, горячей пиццей уже через полчаса.</p>
+            <p class="we-are-the-best__item-descr">Мы доставляем пиццу за 30 минут с момента заказа. Это значит, что вы сможете насладиться свежей, горячей пиццей уже через полчаса.</p>
           </li>
           <li class="we-are-the-best__item">
             <svg class="we-are-the-best__item-svg"><use xlink:href="#icon-shopping"></use></svg>
             <h3 class="we-are-the-best__subtitle">Сервис онлайн-заказов</h3>
-            <p class="we-are-the-best__descr we-are-the-best__descr--item">Онлайн-заказ позволяет оформить заказ в любое время суток, не выходя из дома или офиса.</p>
+            <p class="we-are-the-best__item-descr">Онлайн-заказ позволяет оформить заказ в любое время суток, не выходя из дома или офиса.</p>
           </li>
           <li class="we-are-the-best__item">
             <svg class="we-are-the-best__item-svg"><use xlink:href="#icon-fast-time"></use></svg>
             <h3 class="we-are-the-best__subtitle">Работаем 24/7</h3>
-            <p class="we-are-the-best__descr we-are-the-best__descr--item">Мы работаем 24 часа в сутки, 7 дней в неделю, чтобы вы могли насладиться вкусной пиццей в любое время суток.</p>
+            <p class="we-are-the-best__item-descr">Мы работаем 24 часа в сутки, 7 дней в неделю, чтобы вы могли насладиться вкусной пиццей в любое время суток.</p>
           </li>
         </ul>
         <picture class="we-are-the-best__img">
@@ -82,28 +82,28 @@
         </picture>
       </div>
     </section>
-    <section class="items">
+    <section class="items" id="items">
       <div class="items__container">
         <ul class="items__list">
-          <li class="items__item">
+          <li class="items__item" data-item="1">
             <picture>
               <source src="./images/items-1.webp" type="image/webp">
               <img loading="lazy" src="./images/items-1.jpg" alt="пицца" class="items__img">
             </picture>
         </li>
-          <li class="items__item">
+          <li class="items__item" data-item="2">
             <picture>
               <source src="./images/items-2.webp" type="image/webp">
               <img loading="lazy" src="./images/items-2.jpg" alt="пицца" class="items__img">
             </picture>
         </li>
-          <li class="items__item">
+          <li class="items__item" data-item="3">
             <picture>
               <source src="./images/items-3.webp" type="image/webp">
               <img loading="lazy" src="./images/items-3.jpg" alt="пицца" class="items__img">
             </picture>
         </li>
-          <li class="items__item">
+          <li class="items__item" data-item="4">
             <picture>
               <source src="./images/items-4.webp" type="image/webp">
               <img loading="lazy" src="./images/items-4.jpg" alt="пицца" class="items__img">
@@ -112,7 +112,7 @@
         </ul>
         <h2 class="items__title">Ознакомьтесь с нашими товарами</h2>
         <p class="items__descr">В нашем приложении вы найдете широкий выбор пицц, приготовленных из свежих ингредиентов. Мы предлагаем классические пиццы с томатным соусом и моцареллой, а также оригинальные пиццы с необычными начинками. Загрузите приложение сейчас и откройте для себя новые вкусы!</p>
-        <a class="items__link" href="#">
+        <a class="items__link" href="#app" data-anchor-link>
           Заказать
           <span class="items__link-circle">
             <svg class="items__link-svg">
@@ -122,7 +122,7 @@
         </a>
       </div>
     </section>
-    <section class="client-reviews">
+    <section class="client-reviews" id="client-reviews">
       <div class="client-reviews__container">
         <h2 class="client-reviews__title">Что наши клиенты говорят о нас</h2>
         <div class="swiper client-reviews__swiper">
@@ -252,7 +252,44 @@
         </div>
       </div>
     </section>
+    <section class="app" id="app">
+      <div class="app__container">
+        <picture class="app__picture">
+          <source src="./images/app-image.webp" type="image/webp">
+          <img class="app__img" src="./images/app-image.png" alt="приложение">
+        </picture>
+        <span class="app__download-text">Скачать приложение</span>
+        <h2 class="app__title">Простой способ заказать пиццу</h2>
+        <p class="app__descr">Хочешь заказать вкусную пиццу с доставкой на дом или в офис? Установи наше приложение и получи выгодные скидки и акции!</p>
+        <div class="app__link-container">
+          <a class="app__link" href="#"><svg><use xlink:href="#app-store"></use></svg></a>
+          <a class="app__link" href="#"><svg><use xlink:href="#google-play"></use></svg></a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <svg class="footer__logo"><use xlink:href="#logo"></use></svg>
+      <p class="footer__descr">Закажите вкусную пиццу прямо сейчас!</p>
+      <nav class="footer__nav">
+        <h2 class="footer__title">Навигация</h2>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#we-are-the-best" class="footer__nav-link" data-anchor-link><span>О нас</span></a></li>
+          <li class="footer__nav-item"><a href="#items" class="footer__nav-link" data-anchor-link><span>Пицца</span></a></li>
+          <li class="footer__nav-item"><a href="#client-reviews" class="footer__nav-link" data-anchor-link><span>Отзывы</span></a></li>
+        </ul>
+      </nav>
+      <address class="footer__address">
+        <h2 class="footer__title">Контакты</h2>
+        <a class="footer__address-link" href="mailto:oyasim@email.com">Email: oyasim@email.com</a>
+        <div class="footer__social-network-container">
+          <a href="#" class="footer__social-network-link"><svg class="footer__social-network"><use xlink:href="#facebook"></use></svg></a>
+          <a href="#" class="footer__social-network-link"><svg class="footer__social-network"><use xlink:href="#twitter"></use></svg></a>
+          <a href="#" class="footer__social-network-link"><svg class="footer__social-network"><use xlink:href="#instagram"></use></svg></a>
+        </div>
+      </address>
+    </div>
+  </footer>
 </body>
 </html>

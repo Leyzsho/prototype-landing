@@ -1,11 +1,41 @@
 @media (max-width: 1023px) {
   @mixin btn {
-    &:hover {
-      background-color: $color5;
+    &:hover > span > span {
+      animation: none;
+    }
+
+
+    &:hover::before {
+      transform: none;
+    }
+  }
+
+  @mixin navLink {
+    &:hover span {
+      animation: none;
+    }
+
+    &:hover::before {
+      opacity: 0;
+      animation: none;
+    }
+  }
+
+  @mixin linkToAppContainer {
+    &:hover span::before {
+      transform: none;
+    }
+
+    &:hover span > svg {
+      transform: none;
     }
   }
 
   .header {
+    &__nav-link {
+      @include navLink;
+    }
+
     &__link {
       @include btn;
     }
@@ -15,11 +45,7 @@
     padding-bottom: 100px;
 
     &__link {
-      &:hover {
-        .hero__link-svg {
-          transform: none;
-        }
-      }
+      @include linkToAppContainer;
     }
   }
 
@@ -37,10 +63,6 @@
 
     &__descr {
       text-align: center;
-
-      &--item {
-        text-align: left;
-      }
     }
 
     &__list {
@@ -80,12 +102,7 @@
 
     &__link {
       order: 2;
-
-      &:hover {
-        .items__link-svg {
-          transform: none;
-        }
-      }
+      @include linkToAppContainer;
     }
   }
 
@@ -139,6 +156,56 @@
         left: 50%;
         transform: translateX(-50%);
       }
+
+      &-btn {
+        &:hover {
+          border-color: $color5;
+        }
+
+        &:hover::before {
+          transform: none;
+        }
+      }
+    }
+  }
+
+  .app {
+    padding-bottom: 100px;
+
+    &__container {
+      padding: 0 10px;
+      grid-template-columns: 200px 1fr;
+      column-gap: 50px;
+    }
+
+    &__download-text {
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__descr {
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer {
+    padding-bottom: 30px;
+
+    &__nav {
+      &-link {
+        @include navLink;
+      }
+    }
+
+    &__address {
+      &-link {
+        &:hover {
+          color: $color2;
+        }
+      }
     }
   }
 }
@@ -177,10 +244,6 @@
       @include descr;
       width: 100%;
       margin-bottom: 20px;
-
-      &--item {
-        margin: 0;
-      }
     }
 
     &__img {
@@ -202,10 +265,6 @@
     &__descr {
       @include descr;
       margin-bottom: 30px;
-
-      &--item {
-        margin: 0;
-      }
     }
 
     &__list {
@@ -215,6 +274,10 @@
     &__item {
       padding: 0;
       gap: 8px 20px;
+
+      &-descr {
+        @include descr;
+      }
     }
   }
 
@@ -256,6 +319,78 @@
           height: 250px;
         }
       }
+    }
+  }
+
+  .app {
+    padding-bottom: 50px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__download-text {
+      display: none;
+    }
+
+    &__title {
+      @include title;
+      text-align: center;
+    }
+
+    &__descr {
+      @include descr;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    &__picture {
+      order: 1;
+    }
+
+    &__img {
+      object-fit: contain;
+      height: 400px;
+    }
+
+    &__link-container {
+      order: 2;
+      justify-content: center;
+    }
+  }
+
+  .footer {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    &__title {
+      margin: 0;
+    }
+
+    &__descr {
+      display: none;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      &-list {
+        align-items: inherit;
+        gap: inherit;
+      }
+    }
+
+    &__address {
+      align-items: center;
+      gap: 15px;
     }
   }
 }

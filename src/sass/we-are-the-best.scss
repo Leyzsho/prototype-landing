@@ -18,11 +18,6 @@
     @include descr;
     grid-column: 1;
     margin-bottom: 58px;
-
-    &--item {
-      margin: 0;
-      grid-column: 2;
-    }
   }
 
   &__list {
@@ -39,6 +34,10 @@
     grid-template-rows: repeat(2, max-content);
     gap: 8px 44px;
     padding-left: 60px;
+
+    &-descr {
+      @include descr;
+    }
 
     &-svg {
       grid-row: span 2;
